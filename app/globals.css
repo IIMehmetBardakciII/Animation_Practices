@@ -25,10 +25,120 @@ html.lenis body {
 }
 
 
+/** MenuScreenOverlay Clip path Animation */
 .clipPath{
     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */ /* Default clip path  */
     clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
 }
 .logo {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+
+/** Hover Animation 1 */
+
+.hoverAnimation {
+  margin-top: 40px;
+  border: 1px solid green;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: auto;
+  cursor: pointer;
+}
+
+.hoverAnimation > span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.57, 0.4, 0.55, 1.17);
+}
+
+.hoverAnimation > span:nth-child(1) {
+  position: relative;
+  z-index: 2;
+}
+
+.hoverAnimation > span:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 100%;        /* Container'ın hemen altında başlar */
+  z-index: 1;
+  transform: translateY(0);
+  filter: blur(0.5px);
+
+}
+
+.hoverAnimation:hover > span:nth-child(1) {
+  transform: translateY(-100%);
+  filter: blur(0.5px);
+}
+
+.hoverAnimation:hover > span:nth-child(2) {
+  transform: translateY(-100%);
+  filter: blur(0);
+
+}
+
+
+/** Hover Animation 2 Echo */
+.hoverAnimation2 {
+  margin-top: 40px;
+  border: 1px solid green;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: auto;
+  cursor: pointer;
+}
+
+.hoverAnimation2 > span {
+  /* display: inline-block; */
+  transition: transform 0.3s ease-in-out;
+}
+
+.hoverAnimation2 > span:nth-child(1) {
+  position: relative;
+  z-index: 2;
+}
+
+.hoverAnimation2 > span:nth-child(2),span:nth-child(3),span:nth-child(4),span:nth-child(5) {
+  position: absolute;
+  left: 0;
+  top: 100%;        /* Container'ın hemen altında başlar */
+  z-index: 1;
+  transform: translateY(0);
+  filter: blur(0.5px);
+
+}
+
+.hoverAnimation2:hover > span:nth-child(1) {
+  transform: translateY(-100%);
+  filter: blur(0.5px);
+  scale: 0.9;
+}
+
+.hoverAnimation2:hover > span:nth-child(2) {
+  transform: translateY(-100%);
+  filter: blur(0);
+
+}
+
+.hoverAnimation2:hover > span:nth-child(3) {
+  transform: translateY(-100%);
+  filter: blur(0);
+  transition-delay:10ms;
+
+}
+
+.hoverAnimation2:hover > span:nth-child(4) {
+  transform: translateY(-100%);
+  filter: blur(0);
+  transition-delay: 20ms;
+
+}
+
+.hoverAnimation2:hover > span:nth-child(5) {
+  transform: translateY(-100%);
+  filter: blur(0);
+  transition-delay:40ms;
 }

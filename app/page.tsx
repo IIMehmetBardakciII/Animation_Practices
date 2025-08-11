@@ -1,12 +1,13 @@
+import HoverAnimation from "./Animations/HoverAnimation"
+import HoverAnimation2 from "./Animations/HoverAnimation2"
 import MenuScreenOverlay from "./Animations/MenuScreenOverlay"
 
 const Home = () => {
   return (
     <div className="" >
-      <MenuScreenOverlay />
-      <div className="h-screen bg-amber-700 w-full content relative"></div>
-      <div className="h-screen bg-amber-700 w-full content relative"></div>
-      {/* <div className="h-screen bg-red-700 w-full"></div> */}
+      {/* <MenuScreenOverlay /> */}
+      <HoverAnimation />
+      <HoverAnimation2 />
     </div>
   )
 }
