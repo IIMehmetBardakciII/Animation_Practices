@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ReactLenis from "@/app/utils/lenis"
+import NavForPageTransition from "./Components/NavForPageTransition";
+import PageTransition from "./Animations/PageTransition";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +20,10 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
+        <PageTransition>
+        <NavForPageTransition />
         {children}
+        </PageTransition>
       </body>
       </ReactLenis>
     </html>

@@ -142,3 +142,15 @@ html.lenis body {
   filter: blur(0);
   transition-delay:40ms;
 }
+
+
+
+/** PageTransition */
+.block{
+  flex:1;
+  height: 100%;
+  background-color: rgb(111, 80, 158);
+  transform: scaleX(0);
+  transform-origin: left;
+  
+}
