@@ -2,6 +2,7 @@ import HoverAnimation from "./Animations/HoverAnimation"
 import HoverAnimation2 from "./Animations/HoverAnimation2"
 import MenuScreenOverlay from "./Animations/MenuScreenOverlay"
 import PageTransition from "./Animations/PageTransition"
+import RevealImageAnimation1 from "./Animations/RevelImageAnimation1"
 import SectionScrollTriggerAnimation from "./Animations/SectionScrollTriggerAnimation"
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
       {/* <HoverAnimation />
       <HoverAnimation2 /> */}
       {/* <SectionScrollTriggerAnimation /> */}
-      Home Page
+      <RevealImageAnimation1/>
     </div>
   )
 }

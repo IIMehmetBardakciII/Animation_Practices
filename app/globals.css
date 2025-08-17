@@ -154,3 +154,146 @@ html.lenis body {
   transform-origin: left;
   
 }
+
+
+
+/** Image Reval Animation 1 */
+/* .imageContainer{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  will-change: transform;
+}
+.imageContainer > img {
+ position: absolute;
+ top: 0;
+ left: 0;
+ object-fit: cover;
+ width: 100%;
+ height: 100%;
+ will-change: transform;
+ 
+ 
+} */
+
+/* .mask{ */
+    /* mask ayarları safari için webkit */
+  /* -webkit-mask-image: url("/without-bg.png");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: cover;
+  mask-image:url("/imageWithoutBg.png") ;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: cover; */
+/* } */
+
+
+/* .banner-header{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 75%;
+  text-align: center;
+  color: antiquewhite;
+  z-index: 2;
+}
+
+.revelImageContainer{
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.revelImageContainer h1{
+ font-size: 4rem;
+  line-height: 1.1;
+} */
+
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  will-change: transform;
+}
+
+.banner h1{
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+.banner{
+  position: relative;
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.banner-img-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+}
+
+.banner-img-container .img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+}
+
+.banner-img-container .img.mask{
+  -webkit-mask-image:url("/imageWithoutBg.png");
+  mask-image: url("/imageWithoutBg.png");
+  -webkit-mask-size:cover;
+  mask-size: cover;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+.banner-header{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%); 
+  color: azure;
+  width: 75%;
+  text-align: center;
+  z-index: 2;
+}
+
+.banner-intro-text-container{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.banner-intro-text{
+  flex: 1;
+  position: relative;
+  will-change: transform;
+  color: black;
+}
+.banner-intro-text:nth-child(1){
+  display: flex;
+  justify-content: flex-end;
+}
+
+ @media (max-width:1000px){
+  .banner-header{
+    width:calc(100%-4rem);
+  }
+ }

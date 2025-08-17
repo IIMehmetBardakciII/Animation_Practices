@@ -28,6 +28,7 @@ const PageTransition = ({ children }: { children: React.ReactNode }) => {
     createBlocks();
     // Set gsap states
     gsap.set(blocksRef.current, { scaleX: 0, transformOrigin: "left" });
+
     // Reveal page function
 
     revealPage();
