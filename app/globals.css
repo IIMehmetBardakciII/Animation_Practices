@@ -1,5 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); */
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');@import "tailwindcss";
 
 
 html.lenis,
@@ -7,6 +6,9 @@ html.lenis body {
   height: auto;
 }
 
+@theme inline{
+  --font-roboto:"Roboto, sans-serif";
+}
 .lenis:not(.lenis-autoToggle).lenis-stopped {
   overflow: clip;
 }
