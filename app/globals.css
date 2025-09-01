@@ -368,3 +368,119 @@ html.lenis body {
       font-size: 3rem;
     }
  }
+
+
+
+
+ /** Hover Icon Animation */
+ .hoverAnimationWithIcon {
+  margin-top: 40px;
+  border: 1px solid green;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: auto;
+  cursor: pointer;
+}
+
+.hoverAnimationWithIcon > span {
+  /* display: inline-block; */
+  transition: transform 0.3s ease-in-out;
+}
+
+.hoverAnimationWithIcon > span:nth-child(1) {
+  position: relative;
+  z-index: 2;
+}
+
+.hoverAnimationWithIcon > span:nth-child(2),span:nth-child(3),span:nth-child(4),span:nth-child(5) {
+  position: absolute;
+  left: 0;
+  top: 100%;        /* Container'ın hemen altında başlar */
+  z-index: 1;
+  transform: translateY(0);
+  filter: blur(0.5px);
+
+}
+
+.group:hover > .hoverAnimationWithIcon > span:nth-child(1) {
+  transform: translateY(-100%);
+  filter: blur(0.5px);
+  scale: 0.9;
+}
+
+.group:hover > .hoverAnimationWithIcon > span:nth-child(2) {
+  transform: translateY(-100%);
+  filter: blur(0);
+
+}
+
+.group:hover > .hoverAnimationWithIcon > span:nth-child(3) {
+  transform: translateY(-100%);
+  filter: blur(0);
+  transition-delay:10ms;
+
+}
+
+.group:hover > .hoverAnimationWithIcon > span:nth-child(4) {
+  transform: translateY(-100%);
+  filter: blur(0);
+  transition-delay: 20ms;
+
+}
+
+.group:hover > .hoverAnimationWithIcon > span:nth-child(5) {
+  transform: translateY(-100%);
+  filter: blur(0);
+  transition-delay:40ms;
+}
+
+
+.hoverAnimationWithIconImage{
+  @apply cursor-pointer border w-auto h-full  relative overflow-hidden
+}
+.hoverAnimationWithIconImage > img {
+  transition: all 0.3s ease-in-out;
+}
+.hoverAnimationWithIconImage > img:nth-child(1) {
+  position: relative;
+  z-index: 2;
+}
+
+.group:hover > .hoverAnimationWithIconImage > img:nth-child(1) {
+  transform: translateY(-100%) translateX(100%);
+  filter: blur(0.5px);
+  scale: 0.9;
+}
+
+.hoverAnimationWithIconImage > img:not(:first-child) {
+  position: absolute;
+  left: 0;
+  top: 0%;        /* Container'ın hemen altında başlar */
+  z-index: 1;
+  transform:translateX(-100%) translateY(100%);
+  filter: blur(0.5px);
+}
+
+.group:hover > .hoverAnimationWithIconImage > img:nth-child(2) {
+  transform: translateX(0) translateY(0) ;
+  filter: blur(0);
+  transition-delay:0ms;
+}
+.group:hover > .hoverAnimationWithIconImage > img:nth-child(3) {
+  transform: translateX(0) translateY(0) ;
+  filter: blur(0);
+  transition-delay:10ms;
+}
+.group:hover > .hoverAnimationWithIconImage > img:nth-child(4) {
+  transform: translateX(0) translateY(0) ;
+  filter: blur(0);
+  transition-delay:20ms;
+}
+.group:hover > .hoverAnimationWithIconImage > img:nth-child(5) {
+  transform: translateX(0) translateY(0) ;
+  filter: blur(0);
+  transition-delay:40ms;
+}
+
+

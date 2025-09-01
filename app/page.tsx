@@ -8,6 +8,7 @@ import SectionScrollTriggerAnimation from "./Animations/SectionScrollTriggerAnim
 import StrechTextAnimation from "./Animations/StrechTextAnimation";
 import Learning from "./Animations/Three.js/Learning";
 import TextDistortionEffect from "./Animations/TextDistortionEffect";
+import HoverIconAnimation from "./Animations/HoverIconAnimation";
 
 const Home = () => {
   return (
@@ -19,9 +20,8 @@ const Home = () => {
       {/* <RevealImageAnimation1/> */}
       {/* <StrechTextAnimation/> */}
       {/* <SceneCanvas/> */}
-   
-
-      <TextDistortionEffect/>
+      {/* <TextDistortionEffect/> */}
+      <HoverIconAnimation/> 
    
       </div>
   );
